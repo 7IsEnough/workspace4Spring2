@@ -19,7 +19,18 @@
     <constructor-arg name="name" value="科比"/>
   </bean>
 
-  <bean id="userT" class="com.kobe.pojo.UserT">
-
+    <!--
+    id: bean 的唯一标识符，也就是相当于我们学的对象名
+    class: bean 对象所对应的全限定名：包名 + 类型
+    name: 也是别名, 而且可以同时取多个别名
+    -->
+  <bean id="userT" class="com.kobe.pojo.UserT" name="user2,u2">
+    <property name="name" value="科比布莱恩特"/>
   </bean>
+
+  <!--别名，如果添加了别名，我们也可以使用别名获取到这个对象-->
+  <alias name="user" alias="asdfasdf"/>
+
+
+
 </beans>
