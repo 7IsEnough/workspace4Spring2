@@ -10,6 +10,6 @@
   <bean id="user" class="com.kobe.pojo.User" p:name="科比" p:age="41"/>
 
   <!--c命名空间注入，通过构造器注入：constructor-args-->
-  <bean id="user2" class="com.kobe.pojo.User" c:age="18" c:name="kobe"/>
+  <bean id="user2" class="com.kobe.pojo.User" c:age="18" c:name="kobe" scope="prototype"/>
 
 </beans>

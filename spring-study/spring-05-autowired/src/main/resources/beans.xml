@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+  <bean id="cat" class="com.kobe.pojo.Cat"/>
+  <bean id="dog2222" class="com.kobe.pojo.Dog"/>
+
+<!--  <bean id="people" class="com.kobe.pojo.People">-->
+<!--    <property name="name" value="kobe"/>-->
+<!--    <property name="cat" ref="cat"/>-->
+<!--    <property name="dog" ref="dog"/>-->
+<!--  </bean>-->
+
+
+  <!--
+    byName: 会自动在容器上下文中查找，和自己对象set方法后面的值对应的 beanId
+  -->
+<!--  <bean id="people" class="com.kobe.pojo.People" autowire="byName">-->
+<!--    <property name="name" value="kobe"/>-->
+<!--  </bean>-->
+
+
+  <!--
+    byType: 会自动在容器上下文中查找，和自己对象属性类相同的bean
+  -->
+  <bean id="people" class="com.kobe.pojo.People" autowire="byType">
+    <property name="name" value="kobe"/>
+  </bean>
+
+</beans>

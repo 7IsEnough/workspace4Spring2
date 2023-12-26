@@ -22,10 +22,11 @@ public class MyTest {
   public void test2() {
     ApplicationContext context = new ClassPathXmlApplicationContext(
         "userbeans.xml");
-    User user = context.getBean("user", User.class);
+    User user = context.getBean("user2", User.class);
     User user2 = context.getBean("user2", User.class);
     System.out.println(user);
     System.out.println(user2);
+    System.out.println(user == user2);
   }
 
 }
