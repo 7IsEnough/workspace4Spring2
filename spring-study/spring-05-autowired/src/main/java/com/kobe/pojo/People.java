@@ -1,13 +1,21 @@
 package com.kobe.pojo;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 /**
  * @author promise
  * @date 2023/12/26 - 22:09
  */
 public class People {
 
+  // 如果显示定义了 Autowired 的 required 属性为false，说明这个对象可以为null，否则不允许为空
+//  @Autowired(required = false)
+  @Autowired
+  @Qualifier(value = "cat1")
   private Cat cat;
 
+  @Autowired
   private Dog dog;
 
   private String name;
