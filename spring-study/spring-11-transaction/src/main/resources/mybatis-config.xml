@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!--configuration核心配置文件-->
+<configuration>
+  
+  <typeAliases>
+    <package name="com.clearlove.pojo"/>
+  </typeAliases>
+  
+
+  <!-- 引入我们自己编写的每一个接口的实现文件 -->
+<!--  <mappers>-->
+<!--    &lt;!&ndash;resource: 表示从类路径下找资源&ndash;&gt;-->
+<!--    <mapper resource="mybatis/UserMapper.xml"/>-->
+
+<!--  </mappers>-->
+</configuration>
